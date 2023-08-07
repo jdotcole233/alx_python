@@ -4,7 +4,9 @@
 """
 def is_same_class(obj, a_class):
     """Function documentation goes here"""
-    if type(obj) == bool:
-        obj = repr(obj)
+    if type(obj) == bool or obj == None:
+        isbool = False
+    elif isinstance(obj, a_class):
+        isbool = True
     
-    return isinstance(obj, a_class)
+    return isbool

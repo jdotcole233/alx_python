@@ -13,7 +13,6 @@ class Square:
         classes  and private attributes are 
         created
     '''
-
     def __init__(self, size):
         '''A constructor with the single 
             private variable

@@ -1,4 +1,8 @@
 #! /usr/bin/python3
+"""
+    Class demonstration to test for 
+    assertion of variable types
+"""
 
 class Square:
     """

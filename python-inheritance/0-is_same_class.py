@@ -4,4 +4,4 @@
 """
 def is_same_class(obj, a_class):
     """Function documentation goes here"""
-    return isinstance(obj, a_class)
+    return isinstance(repr(obj), a_class)

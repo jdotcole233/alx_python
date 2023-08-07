@@ -5,8 +5,6 @@
 def is_same_class(obj, a_class):
     """Function documentation goes here"""
     if type(obj) == bool or obj == None:
-        isbool = False
-    elif isinstance(obj, a_class):
-        isbool = True
+        return False
     
-    return isbool
+    return isinstance(obj, a_class)

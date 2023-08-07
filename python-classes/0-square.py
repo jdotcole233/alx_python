@@ -8,4 +8,8 @@ class Square:
         created
     '''
     def __init__(self, size):
+        '''
+            A constructor with the single 
+            private variable
+        '''
         self.__size = size

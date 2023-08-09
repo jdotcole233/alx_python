@@ -2,11 +2,10 @@
 
     Args: 
         Arguements goes here
-        
+
     Returns:
         Return lists goes here
 """
-#! /usr/bin/python3
 
 import requests
 import sys

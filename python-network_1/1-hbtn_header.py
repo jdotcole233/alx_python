@@ -1,8 +1,8 @@
+#!/usr/bin/python3
 """Module comments goes0
 
 This is a regular module comment
 """
-#!/usr/bin/python3
 
 import requests
 import sys

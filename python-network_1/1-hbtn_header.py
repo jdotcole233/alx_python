@@ -1,5 +1,5 @@
-#!/usr/bin/python3
 """Request module demonstration comments goes here"""
+#!/usr/bin/python3
 import requests
 import sys
 

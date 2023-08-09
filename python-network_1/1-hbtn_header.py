@@ -1,6 +1,9 @@
-"""
-    Request module demonstration comments goes here
-    Request module demonstration comments goes here
+"""Request module demonstration comments goes here
+
+    Args: 
+        Arguements goes here
+    Returns:
+        Return lists goes here
 """
 #! /usr/bin/python3
 

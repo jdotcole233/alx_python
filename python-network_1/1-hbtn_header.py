@@ -3,7 +3,6 @@
 
 This is a regular module comment
 """
-
 import requests
 import sys
 req = requests.get(sys.argv[1])

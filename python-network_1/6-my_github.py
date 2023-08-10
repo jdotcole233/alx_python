@@ -13,4 +13,9 @@ header = {
 }
 
 req = requests.get("https://api.github.com/user", headers=header)
-print(req.json()["id"])
+
+try:
+    response = req.json()
+    print(response["id"])
+except:
+    print("None")

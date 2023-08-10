@@ -10,3 +10,4 @@ payload = {
 }
 
 req = requests.post(sys.argv[1], data=payload)
+print(req.text)

@@ -1,6 +1,7 @@
 import MySQLdb
 import sys
 
+"""Select states from db"""
 
 host = "localhost"
 port = 3306

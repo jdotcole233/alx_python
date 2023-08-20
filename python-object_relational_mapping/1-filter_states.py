@@ -18,12 +18,12 @@ db_connect = MySQLdb.connect(
 
 cursor = db_connect.cursor()
 statement = """
-    SELECT * FROM states WHERE name Like 'C%'
+    SELECT * FROM states WHERE name Like 'N%'
 """
 
 cursor.execute(statement)
 results = cursor.fetchall()
 
 for result in results:
-    if result[1][0] == "C":
+    if result[1][0] == "N":
         print(result)

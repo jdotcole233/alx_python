@@ -28,4 +28,4 @@ for result in results:
     if result[2] == search_term:
         output += result[1] + ", "
 
-print(output[:len(output)- 2])
+print(output[:len(output) - 2])

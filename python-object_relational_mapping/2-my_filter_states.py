@@ -20,7 +20,7 @@ db_connect = MySQLdb.connect(
     host=host, user=user, passwd=password, db=database, port=port)
 
 cursor = db_connect.cursor()
-statement = "SELECT * FROM states WHERE name = '{}'".format(search_term)
+statement = "SELECT * FROM states WHERE BINARY name = '{}'".format(search_term)
 
 cursor.execute(statement)
 results = cursor.fetchall()

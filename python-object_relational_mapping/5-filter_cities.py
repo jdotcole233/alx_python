@@ -28,4 +28,4 @@ for result in results:
     if result[2] == search_term:
         print(result[1], end=", ")
 
-print("\b")
+print("\b\b")

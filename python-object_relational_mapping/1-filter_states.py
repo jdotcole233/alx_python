@@ -4,6 +4,7 @@
 import MySQLdb
 import sys
 
+# Some comments that goes here
 
 host = "localhost"
 port = 3306
@@ -25,3 +26,4 @@ results = cursor.fetchall()
 
 for result in results:
     print(result)
+    

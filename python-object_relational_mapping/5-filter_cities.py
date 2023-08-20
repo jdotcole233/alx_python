@@ -25,5 +25,5 @@ cursor.execute(statement)
 results = cursor.fetchall()
 
 for result in results:
-    if result[3] == search_term:
-        print(result[2], end=", ")
+    if result[2] == search_term:
+        print(result[1], end=", ")

@@ -23,9 +23,9 @@ statement = """
 
 cursor.execute(statement)
 results = cursor.fetchall()
-
+output = ""
 for result in results:
     if result[2] == search_term:
-        print(result[1], end=", ")
+        output += result[1] + ", "
 
-print("\b\b")
+print(output[:len(output)- 2])

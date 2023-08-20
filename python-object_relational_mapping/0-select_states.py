@@ -1,4 +1,5 @@
 """Select states from db"""
+#! /usr/bin/python3
 
 import MySQLdb
 import sys

@@ -1,10 +1,12 @@
-"""filter states with name starting from N from db"""
 #! /usr/bin/python3
+# Some comments that goes here
+# Some additional comments
+# Check out more
 
 import MySQLdb
 import sys
 
-# Some comments that goes here
+
 
 host = "localhost"
 port = 3306
@@ -18,7 +20,7 @@ db_connect = MySQLdb.connect(
     host=host, user=user, passwd=password, db=database, port=port)
 
 cursor = db_connect.cursor()
-statement = "SELECT * FROM states WHERE name = {}".format(search_term)
+statement = "SELECT * FROM states WHERE name = '{}'".format(search_term)
 
 cursor.execute(statement)
 results = cursor.fetchall()

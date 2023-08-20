@@ -16,7 +16,8 @@ db_connect = MySQLdb.connect(
 
 cursor = db_connect.cursor()
 statement = """
-    SELECT * FROM cities
+    SELECT cities.id, cities.name, states.name FROM cities
+    JOIN states on cities.state_id=states.id
 """
 
 cursor.execute(statement)

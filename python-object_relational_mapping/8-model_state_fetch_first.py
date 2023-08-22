@@ -18,4 +18,4 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 state = session.query(State).first()
-print("1. {}".format(state.name))
+print("1: {}".format(state.name))

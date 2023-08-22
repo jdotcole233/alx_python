@@ -13,7 +13,7 @@ database = sys.argv[3]
 engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}"
                        .format(username, password, database))
 
-Session = sessionmaker()
+Session = sessionmaker(bind=engine)
 session = Session()
 
 state = session.query(State).first()

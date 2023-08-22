@@ -1,6 +1,7 @@
 #! /usr/bin/python3
 # Some comments should go here
 # Some more comments should go here
+# Some additional comments
 import sys
 from sqlalchemy import create_engine
 from model_state import State, Base

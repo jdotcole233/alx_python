@@ -18,4 +18,8 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 state = session.query(State).first()
-print("1: {}".format(state.name))
+
+if state is not None:
+    print("1: {}".format(state.name))
+else:
+    print("Nothing")

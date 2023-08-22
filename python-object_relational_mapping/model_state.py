@@ -7,12 +7,15 @@ Base = declarative_base()
 """
         Some class comments must go here
 """
+
+
 class State(Base):
+
     """
         Some class comments must go here
     """
     __tablename__ = "states"
-    id = Column(Integer, autoincrement=True,\
-                 unique=True, nullable=False,\
-                      primary_key=True)
+    id = Column(Integer, autoincrement=True,
+                unique=True, nullable=False,
+                primary_key=True)
     name = Column(String(128), nullable=False)

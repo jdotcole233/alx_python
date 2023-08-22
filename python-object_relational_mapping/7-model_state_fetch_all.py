@@ -20,3 +20,4 @@ states = session.query(State).all()
 counter = 1
 for state in states:
     print("{}: {}".format(counter, state.name))
+    counter = counter + 1

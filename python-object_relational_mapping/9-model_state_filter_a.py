@@ -18,8 +18,7 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 states = session.query(State).all()
-counter = 1
+
 for state in states:
     if 'a' in state.name:
-        print("{}: {}".format(counter, state.name))
-        counter = counter + 1
+        print("{}: {}".format(state.id, state.name))

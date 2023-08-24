@@ -1,29 +1,6 @@
-'''
-This module is a python file that contains the class definition of a
-State and an instance Base = declarative_base():
-
-class:
-State: Model of the table states which inherits from Base
- attr:
-    id: unigue id of each state
-    name: names of the states
-'''
 
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
-import MySQLdb
-
-username = 'root'
-password = 'St10285515'
-database = 'test_6'
-# Create connection URL
-connector = "mysql+mysqldb://{}:{}@localhost/{}".format(username, password, database)
-
-# Create an SQLAlchemy engine
-engine = create_engine(connector)
-
-# Establish a connection to the database
-connection = engine.connect()
 
 # Base class
 Base = declarative_base()
@@ -44,4 +21,3 @@ class State(Base):
     name = Column(String(128), nullable=False)
 
 
-Base.metadata.create_all(bind=engine)

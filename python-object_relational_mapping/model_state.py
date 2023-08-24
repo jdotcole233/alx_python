@@ -8,7 +8,12 @@ Base = declarative_base()
 
 class State(Base):
     '''
-    Some class comments must go here
+    A classs that models the table 'states', inherited from Base
+
+    Attributes:
+        id(int): unique identity number for each state
+
+        name(string): name of each state
     '''
     __tablename__ = "states"
     id = Column(Integer, autoincrement=True,

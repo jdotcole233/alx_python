@@ -1,12 +1,8 @@
+from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
 # Base class
 Base = declarative_base()
-'''
-A base class that serves as the foundation for defining
-database models (tables) using the
-Object-Relational Mapping (ORM) approach.
-'''
 
 # A class to create the tables
 class State(Base):
@@ -22,3 +18,5 @@ class State(Base):
     __tablename__ = "states"
     id = Column(Integer, autoincrement=True, unique=True, nullable=False, primary_key=True)
     name = Column(String(128), nullable=False)
+
+

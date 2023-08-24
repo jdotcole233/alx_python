@@ -8,9 +8,9 @@ Base = declarative_base()
 
 class State(Base):
 
-    """
-        Some class comments must go here
-    """
+    '''
+    Some class comments must go here
+    '''
     __tablename__ = "states"
     id = Column(Integer, autoincrement=True,
                 unique=True, nullable=False,
